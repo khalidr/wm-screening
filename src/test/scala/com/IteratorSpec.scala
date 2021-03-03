@@ -1,6 +1,6 @@
 package com
 
-import iteratorSyntax._
+import com.syntax.iterator._
 
 class IteratorSpec extends UnitSpec {
 

@@ -1,6 +1,6 @@
-package com
+package com.syntax
 
-object iteratorSyntax {
+trait IteratorSyntax {
 
   implicit class RichIterator[A](var iterator: Iterator[A]) {
 
@@ -19,3 +19,5 @@ object iteratorSyntax {
     }
   }
 }
+
+object iterator extends IteratorSyntax
