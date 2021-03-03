@@ -19,7 +19,6 @@ object Retry {
     */
   def retry[A](attempts: Int)(fn: () ⇒ A)(implicit success: Success[A]): A = {
 
-
     @tailrec
     def retryLoop(attempt: Int, lastFailure: Option[Throwable] = None): A = {
       attempt match {
