@@ -34,7 +34,6 @@ object Retry {
               else
                 retryLoop(a - 1)
 
-
             case Failure(e) ⇒ retryLoop(a - 1, Some(e))
           }
       }
