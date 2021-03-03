@@ -12,7 +12,6 @@ trait IteratorSyntax {
     }
 
     def peek(): A = {
-
       val buffered = iterator.buffered
       iterator = buffered
       buffered.head
