@@ -7,7 +7,6 @@ import scala.util.{Failure, Try, Success => SuccessfulTry}
 // attempts if function fails, then throw exception
 object Retry {
 
-
   /**
     *
     * @param attempts - the number of times to attempt retrying this function
@@ -40,7 +39,6 @@ object Retry {
 
     retryLoop(attempts)
   }
-
 
   /**
     *
