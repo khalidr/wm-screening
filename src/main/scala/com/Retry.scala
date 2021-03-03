@@ -15,6 +15,9 @@ object Retry {
     * @tparam A - the return type of the function the retry
     * @return - the result of the retry function
     *
+    * Possible enhancements:
+    *   1. Make retry async by operating on () ⇒ Future[A]
+    *   2. Add a delay option between retries
     */
   def retry[A](attempts: Int)(fn: () ⇒ A)(implicit success: Success[A]): A = {
 
