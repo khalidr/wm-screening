@@ -12,7 +12,6 @@ object iteratorSyntax {
     }
 
     def peek(): A = {
-
       val buffered = iterator.buffered
       iterator = buffered
       buffered.head
